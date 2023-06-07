@@ -16,7 +16,7 @@ var marker1 = L.marker([-3.795764, -38.534455]).addTo(map);
 
 var popupContent1 = '<div class="popup-content">' +
   '<img src="\FORTALEZA.png">' +
-  '<p class="popup-text"><strong>SUB-BACIAS CE-07_08_09_ETE COCÓ</strong><br><br>CONTRATO: 048/2022<br>AVANÇO FÍSICO: 3,93%<br>AVANÇO FINANCEIRO: 9,14%<br><br>CLIQUE PARA MAIS INFORMAÇÕES...</p>' +
+  '<p class="popup-text"><strong>SUB-BACIAS CE-07_08_09_ETE COCÓ</strong><br><br>CONTRATO: 048/2022<br>AVANÇO FÍSICO: 6,22%<br>AVANÇO FINANCEIRO: 11,46%<br><br>CLIQUE PARA MAIS INFORMAÇÕES...</p>' +
   '</div>';
   
 
@@ -42,7 +42,7 @@ marker1.on('click', function(e) {
 
 // marker2
 var marker2 = L.marker([-4.088785, -38.500393]).addTo(map);
-marker2.bindPopup('<div class="popup-content"><img src="\HORIZONTE.png"><p class="popup-text"><strong>SAAI HORIZONTE, PACAJUS E CHOROZINHO </strong> <br><br> CONTRATO: 039/2022 <br> AVANÇO FÍSICO: 7,64% <br> AVANÇO FINANCEIRO: 18,56% <br><BR>CLIQUE PARA SABER MAIS...</p></div>');
+marker2.bindPopup('<div class="popup-content"><img src="\HORIZONTE.png"><p class="popup-text"><strong>SAAI HORIZONTE, PACAJUS E CHOROZINHO </strong> <br><br> CONTRATO: 039/2022 <br> AVANÇO FÍSICO: 12,43% <br> AVANÇO FINANCEIRO:  21,69% <br><BR>CLIQUE PARA SABER MAIS...</p></div>');
 
 marker2.on('mouseover', function(e) {
   this.getElement().classList.add('marker-neon');
