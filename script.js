@@ -16,7 +16,7 @@ var marker1 = L.marker([-3.795764, -38.534455]).addTo(map);
 
 var popupContent1 = '<div class="popup-content">' +
   '<img src="\FORTALEZA.png">' +
-  '<p class="popup-text"><strong>SUB-BACIAS CE-07_08_09_ETE COCÓ</strong><br><br>CONTRATO: 048/2022<br>AVANÇO FÍSICO: 6,22%<br>AVANÇO FINANCEIRO: 11,46%<br><br>CLIQUE PARA MAIS INFORMAÇÕES...</p>' +
+  '<p class="popup-text"><strong>SUB-BACIAS CE-07_08_09_ETE COCÓ</strong><br><br>CONTRATO: 048/2022<br>AVANÇO FÍSICO: 8,54%<br>AVANÇO FINANCEIRO: 13,38%<br><br>CLIQUE PARA MAIS INFORMAÇÕES...</p>' +
   '</div>';
   
 
@@ -42,7 +42,7 @@ marker1.on('click', function(e) {
 
 // marker2
 var marker2 = L.marker([-4.088785, -38.500393]).addTo(map);
-marker2.bindPopup('<div class="popup-content"><img src="\HORIZONTE.png"><p class="popup-text"><strong>SAAI HORIZONTE, PACAJUS E CHOROZINHO </strong> <br><br> CONTRATO: 039/2022 <br> AVANÇO FÍSICO: 12,43% <br> AVANÇO FINANCEIRO:  21,69% <br><BR>CLIQUE PARA MAIS INFORMAÇÕES...</p></div>');
+marker2.bindPopup('<div class="popup-content"><img src="\HORIZONTE.png"><p class="popup-text"><strong>SAAI HORIZONTE, PACAJUS E CHOROZINHO </strong> <br><br> CONTRATO: 039/2022 <br> AVANÇO FÍSICO: 16,81% <br> AVANÇO FINANCEIRO:  23,23% <br><BR>CLIQUE PARA MAIS INFORMAÇÕES...</p></div>');
 
 marker2.on('mouseover', function(e) {
   this.getElement().classList.add('marker-neon');
@@ -59,7 +59,7 @@ marker2.on('click', function(e) {
 
 // marker3
 var marker3 = L.marker([-3.81323, -38.49515]).addTo(map);
-marker3.bindPopup('<div class="popup-content"><img src="\PERDAS.png"><p class="popup-text"><strong>REDUÇÃO DE PERDAS CASTELÃO E MESSEJANA </strong> <br><br> CONTRATO: CTR139/2021 <br> AVANÇO FÍSICO: 37,95% <br> AVANÇO FINANCEIRO:  35,41% <br><BR>CLIQUE PARA MAIS INFORMAÇÕES...</p></div>');
+marker3.bindPopup('<div class="popup-content"><img src="\PERDAS.png"><p class="popup-text"><strong>REDUÇÃO DE PERDAS CASTELÃO E MESSEJANA </strong> <br><br> CONTRATO: CTR139/2021 <br> AVANÇO FÍSICO: 43,23% <br> AVANÇO FINANCEIRO: 41,62% <br><BR>CLIQUE PARA MAIS INFORMAÇÕES...</p></div>');
 
 marker3.on('mouseover', function(e) {
   this.getElement().classList.add('marker-neon');
