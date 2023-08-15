@@ -59,7 +59,7 @@ marker2.on('click', function(e) {
 
 // marker3
 var marker3 = L.marker([-3.81323, -38.49515]).addTo(map);
-marker3.bindPopup('<div class="popup-content"><img src="\PERDAS.png"><p class="popup-text"><strong>REDUÇÃO DE PERDAS CASTELÃO E MESSEJANA </strong> <br><br> CONTRATO: CTR139/2021 <br> AVANÇO FÍSICO: 49,15% <br> AVANÇO FINANCEIRO: 47,98GIT% <br><BR>CLIQUE PARA MAIS INFORMAÇÕES...</p></div>');
+marker3.bindPopup('<div class="popup-content"><img src="\PERDAS.png"><p class="popup-text"><strong>REDUÇÃO DE PERDAS CASTELÃO E MESSEJANA </strong> <br><br> CONTRATO: CTR139/2021 <br> AVANÇO FÍSICO: 49,15% <br> AVANÇO FINANCEIRO: 47,98% <br><BR>CLIQUE PARA MAIS INFORMAÇÕES...</p></div>');
 
 marker3.on('mouseover', function(e) {
   this.getElement().classList.add('marker-neon');
