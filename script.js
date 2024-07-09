@@ -5937,14 +5937,14 @@ var expedicionarioCoords = [
 ];
 
 // Adiciona o polígono ao mapa
-var fortalezaPolygon = L.polygon(fortalezaCoords, {color: 'orange'}).addTo(map);
-fortalezaPolygon.on('mouseover', function (e) {
-fortalezaPolygon.getElement().classList.add('white-border');
-});
-fortalezaPolygon.on('mouseout', function (e) {
-fortalezaPolygon.getElement().classList.remove('white-border');
-});
 
+var vilaBrasilPolygon = L.polygon(vilaBrasilCoords, { color: 'yellow' }).addTo(map);
+vilaBrasilPolygon.on('mouseover', function (e) {
+  vilaBrasilPolygon.getElement().classList.add('white-border');
+});
+vilaBrasilPolygon.on('mouseout', function (e) {
+  vilaBrasilPolygon.getElement().classList.remove('white-border');
+});
 
 var horizontePolygon = L.polygon(horizonteCoords, { color: 'green' }).addTo(map);
 horizontePolygon.on('mouseover', function (e) {
@@ -5954,7 +5954,7 @@ horizontePolygon.on('mouseout', function (e) {
   horizontePolygon.getElement().classList.remove('white-border');
 });
 
-var perdasPolygon = L.polygon(perdasCoords, { color: 'blue' }).addTo(map);
+var perdasPolygon = L.polygon(perdasCoords, { color: 'orange' }).addTo(map);
 perdasPolygon.on('mouseover', function (e) {
   perdasPolygon.getElement().classList.add('white-border');
 });
@@ -5970,15 +5970,7 @@ aldeotaPolygon.on('mouseout', function (e) {
   aldeotaPolygon.getElement().classList.remove('white-border');
 });
 
-var vilaBrasilPolygon = L.polygon(vilaBrasilCoords, { color: 'yellow' }).addTo(map);
-vilaBrasilPolygon.on('mouseover', function (e) {
-  vilaBrasilPolygon.getElement().classList.add('white-border');
-});
-vilaBrasilPolygon.on('mouseout', function (e) {
-  vilaBrasilPolygon.getElement().classList.remove('white-border');
-});
-
-var florestaPolygon = L.polygon(florestaCoords, { color: 'brown' }).addTo(map);
+var florestaPolygon = L.polygon(florestaCoords, { color: 'navy' }).addTo(map);
 florestaPolygon.on('mouseover', function (e) {
   florestaPolygon.getElement().classList.add('white-border');
 });
@@ -5986,13 +5978,24 @@ florestaPolygon.on('mouseout', function (e) {
   florestaPolygon.getElement().classList.remove('white-border');
 });
 
-var expedicionarioPolygon = L.polygon(expedicionarioCoords, { color: 'black' }).addTo(map);
+var expedicionarioPolygon = L.polygon(expedicionarioCoords, { color: 'brown' }).addTo(map);
 expedicionarioPolygon.on('mouseover', function (e) {
   expedicionarioPolygon.getElement().classList.add('white-border');
 });
 expedicionarioPolygon.on('mouseout', function (e) {
   expedicionarioPolygon.getElement().classList.remove('white-border');
 });
+
+var fortalezaPolygon = L.polygon(fortalezaCoords, {color: 'blue'}).addTo(map);
+fortalezaPolygon.on('mouseover', function (e) {
+fortalezaPolygon.getElement().classList.add('white-border');
+});
+fortalezaPolygon.on('mouseout', function (e) {
+fortalezaPolygon.getElement().classList.remove('white-border');
+});
+
+// Trazendo o polígono de Fortaleza para a frente
+fortalezaPolygon.bringToFront();
 
 // Obtém o ponto central do retângulo que circunscreve o polígono
 var fortalezaBounds = fortalezaPolygon.getBounds();
@@ -6020,8 +6023,8 @@ var expedicionarioCenter = expedicionarioBounds.getCenter();
 L.marker(fortalezaCenter, {
 icon: L.divIcon({
   className: 'city-label',
-  html: 'Sub-Bacias',
-  iconSize: [100, 40],
+  html: 'Sub Bacias',
+  iconSize: [50, 80],
 })
 }).addTo(map);
 
@@ -6036,8 +6039,8 @@ L.marker(horizonteCenter, {
   L.marker(perdasCenter, {
     icon: L.divIcon({
       className: 'city-label',
-      html: 'Perdas',
-      iconSize: [, 90],
+      html: 'Messejana Castelão',
+      iconSize: [-30, 90],
     })
     }).addTo(map);
     
@@ -6053,7 +6056,7 @@ L.marker(horizonteCenter, {
         icon: L.divIcon({
           className: 'city-label',
           html: 'Vila-Brasil',
-          iconSize: [150, 10],
+          iconSize: [250, 80],
         })
         }).addTo(map);
 
